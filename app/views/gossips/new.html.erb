@@ -1,0 +1,9 @@
+<%= form_for(@gossip) do |f| %>
+    <%= f.label :anonymous_author %>
+    <%= f.text_field :anonymous_author, placeholder: "anonyme 1" %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content, placeholder: "write down your gossip here" %>
+
+    <%= f.submit "Submit my gossip", class: "btn btn-primary" %>
+    <% end %>
